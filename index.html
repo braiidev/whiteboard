@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Witheboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title" id="title" contenteditable="">Witheboard</div>
+      <div class="date" id="date"></div>
+      <div id="darkmode"></div>
+    </header>
+    <section>
+      <article id="editor" contenteditable="" spellcheck="false">
+        <div>Write here...</div>
+      </article>
+      <input type="checkbox" id="btn-tool" />
+      <aside id="tools">
+        <input type="checkbox" id="em" />
+        <input type="checkbox" id="bold" />
+        <input type="checkbox" id="underline" />
+        <input type="checkbox" id="list" />
+        <input type="color" id="color">
+        <input type="number" min="6" max="100" id="size" value="30">
+      </aside>
+    </section>
+  </body>
+</html>
